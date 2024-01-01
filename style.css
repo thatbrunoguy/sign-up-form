@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+html{
+    background: hsl(234, 29%, 20%);
+    font-family: 'Roboto', sans-serif;
+}
+
+#main{
+    display: grid;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    gap: 40px;
+    grid-template-columns: 1fr 1fr;
+}
+
+#main section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 400px;
+    padding: 10px;
+}
+
+#main section h1{
+    color: hsl(234, 29%, 20%);
+    font-weight: 700;
+    margin-bottom: 20px;
+    font-size: 50px;
+}
+
+#main section p{
+    color: hsl(234, 29%, 20%);
+    font-weight: 600;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+#main section ul{
+    padding: 10px 0;
+    font-weight: 600;
+}
+
+#main section ul li{
+    display: flex;
+    gap: 10px;
+    list-style: none;
+}
+
+#main section ul li p{
+    margin: 0;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+form label{
+    color: hsl(234, 29%, 20%);
+    font-weight: 500;
+}
+
+form input{
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid hsl(234, 29%, 20%);
+    margin-bottom: 20px;
+}
+
+form button{
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: hsl(234, 29%, 20%);
+    color: #fff;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+form button:hover{
+    background: linear-gradient(300deg, hsl(4, 100%, 67%), #ff4c68, #ef8172);
+    animation: gradient-animation 18s ease infinite;
+}
+
+#labeldiv{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.valid{
+    color: hsl(4, 100%, 67%);
+    font-size: 13px;
+    font-weight: 600;
+}
+
+#mobileimg{
+    display: none;
+}
+
+/* success */
+
+#thankyou{
+    display: none;
+}
+
+#thankyou h2{
+    color: hsl(234, 29%, 20%);
+    font-weight: 700;
+    padding: 20px 0;
+    margin-bottom: 20px;
+    font-size: 50px;
+}
+
+#dismiss{
+    display: none;
+}
+
+.success-message{
+    padding-bottom: 30px;
+}
+
+/* mobile */
+@media (max-width: 991.98px) {
+    html{
+        background-color: #fff;
+    }
+
+    #main{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    #mobileimg{
+        display: flex;
+        justify-content: center;
+    }
+
+    #imgdiv{
+        display: none;
+    }
+    #dismiss{
+        padding-top: 100px;
+    }
+}
